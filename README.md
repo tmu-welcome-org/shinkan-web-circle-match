@@ -1,73 +1,45 @@
-# React + TypeScript + Vite
+# 新歓Web用「サークル紹介Web」
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+このリポジトリは，中央新歓運営の新歓Web(https://shinkan.tmuzc.org/)で使用される「サークル紹介Web」のソースコードです．
 
-Currently, two official plugins are available:
+## サークル紹介Webとは
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+サークル紹介Webは中央新歓が提供する新歓Webの一部で，サークルの情報を掲載するためのWebアプリです。
 
-## React Compiler
+各サークルの基本情報や活動内容・連絡先などを掲載し，新入生がサークルを探しやすくすることを目的としています．
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 基本設計
 
-## Expanding the ESLint configuration
+Github Pagesで公開するため，すべてクライアントサイドで完結させる設計としています．
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+サークルの情報は `./circle_data` ディレクトリに格納され，この中身を入れ替えることによりサークル情報の更新を行っています.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 掲載希望
+
+その年の新歓ドキュメントをご覧ください。
+（参考：[新歓ドキュメント2026](https://tmu-shinkan-doc.notion.site/2b6b9cf33d258195b1f3e3cbca955664?v=2b6b9cf33d2581c58f35000ca6df71b4&pvs=74)）
+
+## 使用技術
+
+- React + Vite + Tailwind CSS
+
+## 環境構築
+
+```bash
+npm install 
+
+# Run in development mode 
+# --host オプションにより，ローカルネットワーク上の他の端末からもアクセス可能になっています．
+npm run dev 
+
+# Build => ./dist
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Contact/Feedback
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+本アプリに関するお問い合わせやフィードバックは，以下のフォームまでお願いいたします．（こちらに掲載の申請はしないでください．）
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+[お問い合わせフォーム](https://forms.gle/srvu7ibxUj5a5DhWA)

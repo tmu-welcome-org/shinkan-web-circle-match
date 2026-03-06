@@ -1,6 +1,6 @@
 # 新歓Web用「サークル紹介Web」
 
-このリポジトリは，中央新歓運営の新歓Web(https://shinkan.tmuzc.org/)で使用される「サークル紹介Web」のソースコードです．
+このリポジトリは，中央新歓運営の新歓Web(https://shinkan.tmuzc.org)で使用される「サークル紹介Web」のソースコードです．
 
 ## サークル紹介Webとは
 

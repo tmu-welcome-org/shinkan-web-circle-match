@@ -1,0 +1,40 @@
+{
+    "repo_url": "https://example.com/",
+    "home_url": "../",
+    "tags_category":{
+        "single_select": {
+            "活動頻度": ["不定期・月数回", "週1〜2回", "週3〜4回", "週5回以上", "自由参加"],
+            "分類": ["運動系", "音楽系", "文化系", "モノづくり", "ボランティア", "趣味・エンタメ"]
+        },
+        "multi_select": {
+            "基本情報": ["兼サー可能", "部費無料", "南大沢キャンパス", "日野キャンパス", "荒川キャンパス"],
+            "雰囲気": ["初心者歓迎", "経験者歓迎", "マネージャー歓迎", "ゆるく楽しむ", "ガチ勢・大会目標", "イベント豊富", "ユニークな活動"]
+        }
+    },
+    "circle_data_dir": "circle_data",
+    "circle_data_file": "circle.json",
+    "circle_images_dir": "circle_images",
+    "links_uri_prefix": {
+        "twitter": "https://twitter.com/",
+        "website": "",
+        "instagram": "https://www.instagram.com/",
+        "lineOC": "",
+        "lineOfficial": "https://page.line.me/",
+        "youtube": ""
+    },
+    "links_default_label": {
+        "twitter": "X（旧Twitter）",
+        "website": "Webサイト",
+        "instagram": "Instagram",
+        "lineOC": "LINEオープンチャット",
+        "lineOfficial": "LINE公式アカウント",
+        "youtube": "YouTube"
+    },
+    "mail_antiSpam_char": "〇",
+    "image_default_size": {
+        "width": 400,
+        "height": 400
+    },
+    "favorite_storage_key": "circle_match_favorite_circles"
+    
+}

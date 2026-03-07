@@ -2,18 +2,17 @@ import appConfig from '../config.json'
 import { type CircleItem } from '../CircleDataHandler'
 import LazyImageWithSpinner from './LazyImageWithSpinner'
 
-import { FaArrowRight, FaRegHeart } from 'react-icons/fa'
+import { FaArrowRight } from 'react-icons/fa'
 
 export type CircleCardProps = {
     id: string;
     highlighted_tags?: string[];
     circleItem: CircleItem | undefined;
-    onFavoriteClicked?: (id: string) => void;
     onCardClick?: (id: string) => void;
 
 }
 
-export default function CircleCard({id, highlighted_tags, circleItem, onFavoriteClicked, onCardClick }: CircleCardProps) {
+export default function CircleCard({id, highlighted_tags, circleItem, onCardClick }: CircleCardProps) {
     
     if (!circleItem) { // circleItem is undefined, return a placeholder card or null
         return null;

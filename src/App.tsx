@@ -2,7 +2,7 @@ import './App.css'
 import appConfig from './config.json'
 import { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
-import { FaBars, FaArrowLeft, FaSearch, FaHeart } from 'react-icons/fa'
+import { FaBars, FaArrowLeft, FaSearch } from 'react-icons/fa'
 import { IoIosClose } from 'react-icons/io'
 
 import CircleDataHandler, { type CircleData } from './CircleDataHandler'
@@ -97,12 +97,12 @@ function App() {
             ))} */}
             {currentMode === "search" && (
               Object.entries(filterCirclesByTags(circleData as CircleData)?.circles || {}).map(([id, circleItem]) => (
-                <CircleCard key={id} id={id} highlighted_tags={getSelectedTags()} circleItem={circleItem} onFavoriteClicked={(id) => {console.log(`${id} fav clicked!`)}} onCardClick={handleCardClick} />
+                <CircleCard key={id} id={id} highlighted_tags={getSelectedTags()} circleItem={circleItem} onCardClick={handleCardClick} />
               ))
             )}
             {currentMode === "favorite" && (
               Object.entries(circleData?.circles || {}).map(([id, circleItem]) => (
-                <CircleCard key={id} id={id} highlighted_tags={[]} circleItem={circleItem} onFavoriteClicked={(id) => {console.log(`${id} fav clicked!`)}} onCardClick={handleCardClick} />
+                <CircleCard key={id} id={id} highlighted_tags={[]} circleItem={circleItem} onCardClick={handleCardClick} />
               )) 
             )}
           </div>

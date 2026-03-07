@@ -4,37 +4,7 @@
         "build": "2026-03-02-11-11-11"
     },
     "circles": {
-        "01_demo":{
-            "circle_name" : "団体名団体名団体名団体名団体名団体名団体名",
-            "catchphrase" : "キャッチコピーキャッチコピーキャッチコピーキャッチコピーキャッチコピー",
-            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \n\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "images" : [
-                "index-head.jpg",
-                "saren_pict.jpg"
-            ],
-            "links":[
-                {
-                    "type": "twitter",
-                    "label": "X（旧Twitter）",
-                    "uri": "https://twitter.com/xxx"
-                },
-                {
-                    "type": "website",
-                    "label": "Webサイト",
-                    "uri": "https://example.com"
-                }
-            ],
-            "mail": "example★example.com",
-            "tags": [
-                "週1〜2回",
-                "運動系",
-                "兼サー可能",
-                "南大沢キャンパス",
-                "初心者歓迎",
-                "ゆるく楽しむ",
-                "イベント豊富"
-            ]
-        },
+        
         "01_ididid":{
             "circle_name" : "運動サークルTMU",
             "catchphrase" : "オールマイティに運動したい人集まれ！",
@@ -100,7 +70,7 @@
             "catchphrase" : "管楽器経験者集まれ！私たちは、南大沢キャンパスを中心に活動している吹奏楽サークルです。",
             "description" : "Metropolitan Bandは、東京都立大学公認の吹奏楽サークルです。年2回の定期演奏会や吹奏楽コンクールに向けて、日々練習に励んでいます。音楽が好きな仲間と一緒に、最高の演奏を創り上げませんか？経験者はもちろん、ブランクがある方や楽器に興味がある初心者も大歓迎です。南大沢キャンパスの講堂で週3回活動しています。",
             "images" : [
-                "saren_pict.jpg",
+                "tag-head.jpg",
                 "saren_pict.jpg",
                 "saren_pict.jpg",
                 "saren_pict.jpg",
